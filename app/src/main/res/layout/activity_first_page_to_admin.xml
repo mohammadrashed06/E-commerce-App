@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin.FirstPageToAdminActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="أهلا بك بصفحة المشرف الرجاء اختيار المطلوب."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textDirection="rtl"
+        android:layout_gravity="center"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#000000">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/add_new_item_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="أضافة منتجات جديدة"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="150dp"
+        />
+    <Button
+        android:id="@+id/check_new_orders_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="تحقق من الطلبات الجديدة"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/edit_user_product_data_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="تعديل بيانات المنتجات"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/log_out_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="تسجيل الخروج"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        />
+
+
+</LinearLayout>

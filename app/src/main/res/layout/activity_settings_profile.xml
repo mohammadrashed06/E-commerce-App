@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stats"
+    tools:context=".Profile_Settengs_Activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/upLayout"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+        <RelativeLayout
+            android:id="@+id/img_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/settings_profile_image"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/profile"
+                android:layout_margin="9dp"
+                android:padding="3dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FFFFFF" >
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/settings_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_user"
+            android:text="Mohammad Rashed"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Update"
+            android:id="@+id/update_settings_btn"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Close"
+            android:id="@+id/close_settings_btn"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linely"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upLayout"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="20dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linely">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:id="@+id/settings_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:hint= "الاسم الكامل"
+                android:textDirection="rtl"
+                android:textAlignment="textStart"
+                android:drawableStart="@drawable/ic_person_gray_24dp"
+                android:inputType="text"
+                android:padding="16dp"
+                />
+            <EditText
+                android:id="@+id/settings_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:hint= "رقم الهاتف"
+                android:textDirection="rtl"
+                android:textAlignment="textEnd"
+                android:drawableStart="@drawable/ic_contact_phone_black_24dp"
+                android:inputType="phone"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+        />
+            <EditText
+                android:id="@+id/settings_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_bg"
+                android:drawableStart="@drawable/ic_lock_gray24dp"
+                android:hint="كلمة المرور"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عنوان السكن"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="16dp"
+                android:drawableLeft="@drawable/ic_add_location_black_24dp"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/settings_location_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:hint= "المحافظة"
+                android:textDirection="rtl"
+                android:layout_marginTop="10dp"
+                android:textAlignment="textStart"
+                android:drawableStart="@drawable/ic_location_city_black_24dp"
+                android:inputType="text"
+                android:padding="16dp"
+                />
+            <EditText
+                android:id="@+id/settings_location_street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:hint= "المنطقة و الشارع"
+                android:textDirection="rtl"
+                android:layout_marginTop="10dp"
+                android:textAlignment="textStart"
+                android:drawableStart="@drawable/ic_traffic_black_24dp"
+                android:inputType="text"
+                android:padding="16dp"
+                />
+            <EditText
+                android:id="@+id/settings_build_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:hint= "رقم العمارة"
+                android:textDirection="rtl"
+                android:layout_marginTop="10dp"
+                android:textAlignment="textStart"
+                android:drawableStart="@drawable/ic_business_black_24dp"
+                android:inputType="number"
+                android:padding="16dp"
+                />
+            <EditText
+                android:id="@+id/settings_home_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:hint= "رقم الشقة"
+                android:textDirection="rtl"
+                android:layout_marginTop="10dp"
+                android:textAlignment="textStart"
+                android:drawableStart="@drawable/ic_home_black_24dp"
+                android:inputType="number"
+                android:padding="16dp"
+                />
+
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchProductActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/r5"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_product_edit_text"
+            android:hint="أسم المنتج"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:background="@android:color/white"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textStart"
+            android:textDirection="rtl"
+           >
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/search_product_edit_text"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_centerInParent="true">
+
+        </ImageView>
+
+</RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:padding="1dp"
+        android:layout_below="@id/r5"
+
+
+        />
+
+
+
+
+
+</RelativeLayout>

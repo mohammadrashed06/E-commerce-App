@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "135836230028",
+    "firebase_url": "https://dorraproject-a0a50.firebaseio.com",
+    "project_id": "dorraproject-a0a50",
+    "storage_bucket": "dorraproject-a0a50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135836230028:android:6aabde6a44d6f3b247f6a9",
+        "android_client_info": {
+          "package_name": "com.example.dorra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135836230028-7e6n3rhpm2oeqvg4uoq3lm9cg8n00e5k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dorra",
+            "certificate_hash": "315065f5d835ee06e53d3ff833fc9c0bf415140a"
+          }
+        },
+        {
+          "client_id": "135836230028-5a2svhfhgfb2i69gtgtvqp0oava38b53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd3-FsDCnJuEfgFa4pqyu4DadvxVSo4Pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135836230028-5a2svhfhgfb2i69gtgtvqp0oava38b53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

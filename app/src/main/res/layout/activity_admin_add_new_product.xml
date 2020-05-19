@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminAddNewProductActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/select_product_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:id="@+id/add_new_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_product_image"
+        android:text="أختيار صورة"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:background="@drawable/buttons"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_new_image"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:hint="أسم المنتج..."
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/input_design" />
+    <EditText
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:inputType="text"
+        android:maxLength="23"
+        android:layout_marginTop="16dp"
+        android:padding="20dp"
+        android:hint="التفاصيل بحد اقصى 23 حرف..."
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/input_design" />
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_description"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="16dp"
+        android:padding="20dp"
+        android:hint="سعر المنتج..."
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/input_design" />
+
+
+
+    <Button
+        android:id="@+id/add_new_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_price"
+        android:text="أضافة المنتج"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:background="@drawable/buttons"
+        android:textColor="#FFFFFF" />
+    </RelativeLayout>
+</ScrollView>

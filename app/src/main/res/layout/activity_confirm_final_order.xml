@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmFinalOrderActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:layoutDirection="rtl"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أتمام عملية الشراء"
+            android:id="@+id/contenie_order"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textDirection="rtl"
+            android:textColor="@color/colorPrimary"
+            android:gravity="start"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="10dp"
+            android:drawableEnd="@drawable/ic_shopping_cart_green_24dp"
+            android:layout_marginTop="30dp">
+        </TextView>
+        <TextView
+            android:id="@+id/enter_delevird_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الرجاء أدخال معلومات الشراء و الوصول"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textDirection="rtl"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/sheppmint_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:hint= "الاسم الكامل"
+            android:textDirection="rtl"
+            android:layout_marginTop="10dp"
+            android:textAlignment="textStart"
+            android:drawableStart="@drawable/ic_person_gray_24dp"
+            android:inputType="text"
+            android:padding="16dp"
+            />
+        <EditText
+            android:id="@+id/sheppmint_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:hint= "رقم الهاتف"
+            android:textDirection="rtl"
+            android:textAlignment="textEnd"
+            android:drawableStart="@drawable/ic_contact_phone_black_24dp"
+            android:inputType="phone"
+            android:layout_marginTop="10dp"
+            android:padding="16dp"
+            />
+
+
+    <EditText
+        android:id="@+id/sheppmint_location_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_bg"
+        android:hint= "المحافظة"
+        android:textDirection="rtl"
+        android:textAlignment="textStart"
+        android:drawableStart="@drawable/ic_location_city_black_24dp"
+        android:inputType="text"
+        android:padding="16dp"
+        />
+    <EditText
+        android:id="@+id/sheppmint_location_street"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_bg"
+        android:hint= "المنطقة و الشارع"
+        android:textDirection="rtl"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textStart"
+        android:drawableStart="@drawable/ic_traffic_black_24dp"
+        android:inputType="text"
+        android:padding="16dp"
+        />
+    <EditText
+        android:id="@+id/sheppmint_build_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_bg"
+        android:hint= "رقم العمارة"
+        android:textDirection="rtl"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textStart"
+        android:drawableStart="@drawable/ic_business_black_24dp"
+        android:inputType="number"
+        android:padding="16dp"
+        />
+    <EditText
+        android:id="@+id/sheppmint_home_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_bg"
+        android:hint= "رقم الشقة"
+        android:textDirection="rtl"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textStart"
+        android:drawableStart="@drawable/ic_home_black_24dp"
+        android:inputType="number"
+        android:padding="16dp"
+        />
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_gravity="end"
+    android:layout_marginTop="10dp"
+
+    >
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="التوصيل داخل عمان"
+            android:id="@+id/deliverd_in_amman"
+            ></RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="التوصيل الى اربد"
+            android:id="@+id/deliverd_in_irbed"
+            ></RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="التوصيل الى الزرقاء"
+            android:id="@+id/deliverd_in_zarqa"
+            ></RadioButton>
+</RadioGroup>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="الدفع عند الاستلام"
+            android:layout_above="@+id/confirm_product_to_cart_btn"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp">
+        </CheckBox>
+
+        <Button
+            android:id="@+id/confirm_product_to_cart_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تأكيد"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="30dp"
+            android:elevation="6dp"
+            android:textSize="16sp"
+
+            >
+        </Button>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
